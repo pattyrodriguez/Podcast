@@ -1,0 +1,17 @@
+.footer-config{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    
+    h4{
+        @include font-secundaria;
+        color: $color-principal;
+
+    }
+    i{
+
+        margin: auto; 
+        display: block;
+    }
+
+}

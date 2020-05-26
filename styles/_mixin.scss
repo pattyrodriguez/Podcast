@@ -1,0 +1,44 @@
+@mixin font-principal {
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+@mixin font-secundaria {
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+@mixin button-style {
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;500&display=swap');
+    font-family: 'IBM Plex Mono', monospace;
+    width: 288px;
+    height: 48px;
+    text-decoration: none;
+    background-color: $button-background;
+    font-size: 16px;
+    color: $color-principal;
+    text-align: center;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    position: relative; 
+    margin-top: 3em;
+    line-height: 22px;
+
+}
+
+@mixin button-animation {
+        background: $button-animate-background;
+        color: $color-white;
+    }
+
+@mixin background-blue {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 1203.5px;
+    background: $skewed;
+    transform: skewY(-5deg);
+    transform-origin: bottom right;
+}

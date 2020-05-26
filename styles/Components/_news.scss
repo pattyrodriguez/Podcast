@@ -1,0 +1,23 @@
+.news {
+    margin-top: 1em;
+h3{
+   @include font-principal;
+   text-align: center;
+   color: $color-white;
+   margin: 1em;
+}
+
+.button-b{
+    @include button-style;
+}
+
+.button-b:active {
+    @include button-animation;
+}
+
+}
+.skewed2{
+    @include background-blue;
+    height: 341px;
+    
+}

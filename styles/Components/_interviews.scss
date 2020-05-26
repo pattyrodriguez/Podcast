@@ -1,0 +1,25 @@
+.interviews{
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    width: 96%;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    h2{
+        @include font-principal;
+        margin: 1em;
+    }
+}
+
+.contenido {
+    background: url(images/grace-hopper.png) no-repeat fixed center;
+    background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+      }
+    

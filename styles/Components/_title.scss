@@ -1,0 +1,115 @@
+
+.title{
+    padding-top: 3.2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    color: $color-principal;
+}
+h1{
+    @include font-principal;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 10px
+}
+#world{
+    text-decoration-line: line-through;
+}
+#punto{
+    color: $color-blue;
+}
+
+.p-mobile{
+    text-align: justify;
+    margin-bottom: 2em;
+    @include font-secundaria;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 8px
+}
+
+.p-desktop {
+    display: none;
+}
+
+.button-t{
+    @include button-style;
+}
+
+.button-t:active {
+    @include button-animation;
+}
+
+@media screen and (min-width: 768px) {
+    .title{
+        padding: 3em;
+        margin: 0;
+
+    h1 {
+        margin: 8vw;
+        margin-bottom: 0;
+        font-size: 50px;
+        line-height: 63px;
+    }
+    .p-mobile{
+        @include font-secundaria;
+        text-align: justify;
+        margin-left: 8vw;
+        margin-right: 32vw;
+        font-size: 15px;
+        line-height: 24px;
+        word-spacing: -5px;
+
+    }
+
+    .button-t {
+        width: 226px;
+        height: 56px;
+        left: 26%; 
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+}
+
+@media screen and (min-width: 1024px) {
+
+    .title{
+        padding: 3em;
+        margin: 0;
+
+    h1 {
+        margin: 8vw;
+        margin-bottom: 0;
+        font-size: 64px;
+        line-height: 84px;
+    }
+    .p-mobile{
+        display: none;
+    }
+    .p-desktop {
+        @include font-secundaria;
+        text-align: justify;
+        display: block;
+        margin-left: 8vw;
+        margin-right: 42vw;
+        font-size: 16px;
+        line-height: 24px;
+        word-spacing: -5px;
+    }
+    .button-t {
+        width: 226px;
+        height: 56px;
+        left: 18%; 
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    br{
+        display: none;
+    }
+}
+
+}

@@ -1,0 +1,27 @@
+.topics{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+   
+    h2{
+        @include font-principal;
+        margin: 1em;
+    }
+    h3{
+        @include font-secundaria;
+        font-size: 24px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+
+    }
+    img{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+    margin-top: 5em;
+    margin-bottom: -4em;
+    }
+}
