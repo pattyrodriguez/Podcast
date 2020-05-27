@@ -1,17 +1,24 @@
-.footer-config{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    background-color: white;
+.config{
+    background-color: $color-white;
+    z-index: 0;
+    padding: 1em;
+    padding-bottom: 2.5em;
+    margin-top: 0.2em;
     
     h4{
         @include font-secundaria;
         color: $color-principal;
-
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
     }
-    i{
-
-        margin: auto; 
-        display: block;
-    }
-
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.5em;
+        
+        & a {
+                color: $color-principal;
+            }
+        }
 }

@@ -1,10 +1,11 @@
 .news {
-    margin-top: 1em;
-h3{
+h2{
    @include font-principal;
    text-align: center;
    color: $color-white;
    margin: 1em;
+   font-size: 36px;
+   line-height: 42px;
 }
 
 .button-b{
@@ -14,10 +15,10 @@ h3{
 .button-b:active {
     @include button-animation;
 }
-
 }
 .skewed2{
     @include background-blue;
     height: 341px;
+   
     
 }

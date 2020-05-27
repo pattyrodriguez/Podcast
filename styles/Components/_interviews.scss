@@ -1,25 +1,26 @@
 .interviews{
-    display: grid;
-    grid-template-columns: auto;
-    position: relative;
-    width: 96%;
-    max-width: 640px;
-    margin: 0 auto;
-    text-align: center;
-    h2{
-        @include font-principal;
-        margin: 1em;
-    }
-}
 
-.contenido {
-    background: url(images/grace-hopper.png) no-repeat fixed center;
-    background-size: cover;
-    background-size: cover;
-    background-size: cover;
-    background-size: cover;
-    height: 100%;
-    width: 100% ;
-    text-align: center;
-      }
+        & h2 {
+            @include font-principal;
+            color: $color-principal;
+            font-size: 36px;
+            line-height: 42px;
+            margin-left: 1em;
+            
+            line-height: 42px;
+            
+
+        }
+        & .contenido {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+    
+            & .breakpoint {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
     

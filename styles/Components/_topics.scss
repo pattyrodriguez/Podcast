@@ -1,27 +1,26 @@
 .topics{
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+
    
     h2{
         @include font-principal;
-        margin: 1em;
+        font-size: 2.25em;
+        line-height: 42px;
+        margin-left: 0.5em;
+        margin-right: 1em;
     }
-    h3{
-        @include font-secundaria;
-        font-size: 24px;
-        color: #060A24;
-        letter-spacing: 0;
+    div{
         text-align: center;
+        
+        h3{
+            @include font-secundaria;
+            color: $color-principal;
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 2.5em;
+        }
+    }
 
-    }
-    img{
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    position: relative;
-    margin-top: 5em;
-    margin-bottom: -4em;
-    }
 }
