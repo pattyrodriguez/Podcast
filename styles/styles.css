@@ -737,7 +737,7 @@ h1 {
   margin-left: 1em;
 }
 
-.interviews .contenido {
+.interviews .entrevistas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,7 +749,7 @@ h1 {
   padding: 0;
 }
 
-.interviews .contenido .breakpoint {
+.interviews .entrevistas .breakpoint {
   width: 100%;
   height: auto;
 }
@@ -771,7 +771,7 @@ h1 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .interviews .contenido {
+  .interviews .entrevistas {
     display: -ms-grid;
     display: grid;
     width: 100%;
@@ -1087,7 +1087,7 @@ h1 {
             justify-content: center;
   }
   .config h3 {
-    font-size: 1em;
+    font-size: 16px;
     text-align: center;
     color: #060a24;
     font-weight: 400;
