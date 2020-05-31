@@ -4,6 +4,7 @@
   position: absolute;
   width: 100%;
   z-index: 2;
+  text-transform: uppercase;
 }
 
 .header ul {
@@ -17,10 +18,9 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid $borde;
   text-decoration: none;
   color: $color-white;
-  @include font-secundaria;
+  @include font-parrafos;
   font-size: 16px;
 }
 

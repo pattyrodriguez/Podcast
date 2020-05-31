@@ -1,15 +1,12 @@
 .episodes{
-    color: $color-white;
     margin-top: 1.5em;
-    
     display: grid;
     grid-template-columns: auto;
 
     h2{
-        @include font-principal;
-        font-size: 36px;
-        line-height: 42px;
+        @include font-titulos;
         margin-left: 1em;
+        color: $color-white;
     }
 
     div {
@@ -42,11 +39,9 @@
     .episodes{
         margin-top: 10vw;
         div{
-            display: grid;
             grid-template-columns: auto auto;
-            width: calc( 100vw - 450px);
+            width: calc( 100vw - 450px );
             height: 228px;
-            padding: 0;
             margin: 1vw;
             }
 
@@ -68,19 +63,18 @@
 
     
     .episodes{
-        margin-top: 10vw;
+        
         div{
-            width: calc( 100vw - 800px);
-            height: 232pxpx;
-            padding: 0;
-            margin: 5vw;
+            width: calc( 100vw - 600px);
+
+            height: 232px;
             margin-bottom: 1vw;
             
             }
 
         h2{
-            margin-left: 14vw;
             font-size: 48px;
+            margin-bottom: 8vw;
         }
     }
 
@@ -88,4 +82,18 @@
         height: 1042.6px;
     }
     
+}
+
+@media screen and (min-width: 1440px) {
+
+    
+    .episodes{
+
+        h2{
+            margin-bottom: 5vw;
+        }
+        div{
+            width: calc( 100vw - 910px);
+        }
+    }
 }

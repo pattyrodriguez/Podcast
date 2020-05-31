@@ -6,8 +6,7 @@
     margin-top: 0.2em;
     
     h4{
-        @include font-secundaria;
-        color: $color-principal;
+        @include font-parrafos;
         font-size: 14px;
         line-height: 22px;
         text-align: center;
@@ -21,4 +20,42 @@
                 color: $color-principal;
             }
         }
+}
+
+@media screen and (min-width: 1024px) {
+    .config 
+    
+    {
+        padding-bottom: 2.5em;
+        margin-top: 0.8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        h3{
+            font-size: 1em;
+            text-align: center;
+            color: #060a24;
+            font-weight: 400;
+            margin-right: 10em;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 0.5;
+            margin-left: 15em;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .config{
+        padding-bottom: 3.5em;
+
+        h4{
+            float: left;
+        }
+    }
 }

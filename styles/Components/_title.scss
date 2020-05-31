@@ -4,12 +4,9 @@
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom: 1em;
-    color: $color-principal;
 }
 h1{
-    @include font-principal;
-    font-size: 36px;
-    line-height: 42px;
+    @include font-titulos;
     margin: 10px
 }
 #world{
@@ -22,10 +19,7 @@ h1{
 .p-mobile{
     text-align: justify;
     margin-bottom: 2em;
-    @include font-secundaria;
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: 22px;
+    @include font-parrafos;
     margin: 8px
 }
 
@@ -54,14 +48,12 @@ h1{
         line-height: 63px;
     }
     .p-mobile{
-        @include font-secundaria;
         text-align: justify;
         margin-left: 8vw;
         margin-right: 32vw;
         font-size: 15px;
         line-height: 24px;
         word-spacing: -5px;
-
     }
 
     .button-t {
@@ -79,6 +71,7 @@ h1{
 
     .title{
         padding: 3em;
+        padding-bottom: 0;
         margin: 0;
 
     h1 {
@@ -91,7 +84,7 @@ h1{
         display: none;
     }
     .p-desktop {
-        @include font-secundaria;
+        @include font-parrafos;
         text-align: justify;
         display: block;
         margin-left: 8vw;

@@ -2,25 +2,106 @@
     display: flex;
     flex-direction: column;
     margin: 1em;
-
    
     h2{
-        @include font-principal;
-        font-size: 2.25em;
-        line-height: 42px;
+        @include font-titulos;
         margin-left: 0.5em;
         margin-right: 1em;
     }
-    div{
+    .a-topics{
         text-align: center;
         
         h3{
-            @include font-secundaria;
-            color: $color-principal;
-            font-size: 1.5em;
+            @include font-titulossec;
             text-align: center;
             margin-bottom: 2.5em;
         }
     }
 
+}
+@media screen and (min-width: 768px) {
+    .topics{
+        h2{
+            margin-left: 1.2em;
+            margin-top: 1.2em;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .topics {
+        width: 95%;
+        h2 {
+            font-size: 3em;
+            font-weight: 400;
+            line-height: 42px;
+            width: 70%;
+            margin-left: 1em;
+            left: 3em;
+            margin-bottom: 2em;
+        }
+        .a-topics {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 5em 1fr 1fr 1fr 1fr 5em;
+            grid-template-rows: 1fr 2em 1fr;
+            grid-template-areas:
+                ". icon1 icon2 icon3 icon4 ."
+                ". . . . . ."
+                ". t-icon1 t-icon2 t-icon3 t-icon4 .";
+            justify-items: center;
+            & .icon1 {
+                grid-area: icon1;
+                text-align: center;
+                grid-row: 1;
+                grid-column: 2;
+            }
+            & .icon2 {
+                grid-area: icon2;
+                grid-row: 1;
+                grid-column: 3;
+            }
+            & .icon3 {
+                grid-area: icon3;
+                grid-row: 1;
+                grid-column: 4;
+            }
+            & .icon4 {
+                grid-area: icon4;
+                grid-row: 1;
+                grid-column: 5;
+            }
+            & .h3 {
+                font-size: 1.5em;
+                font-weight: 600;
+                color: #060a24;
+            }
+
+            & .t-icon1 {
+                grid-area: ticon1;
+                margin: 0;
+                grid-row: 3;
+                grid-column: 2;
+            }
+            & .t-icon2 {
+                grid-area: ticon2;
+                margin: 0;
+                grid-row: 3;
+                grid-column: 3;
+            }
+            & .t-icon3 {
+                margin-left: 3em;
+                grid-area: ticon3;
+                margin: 0;
+                grid-row: 3;
+                grid-column: 4;
+            }
+            & .t-icon4 {
+                grid-area: ticon4;
+                margin: 0;
+                width: 90%;
+                grid-row: 3;
+                grid-column: 5;
+            }
+        }
+    }
 }
