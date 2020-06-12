@@ -64,6 +64,7 @@
         margin-top: 10vw;
         margin-left: 0;
         flex-direction: row;
+        margin-bottom: 1vw;
 
         .phone{
             width: 30%;
@@ -91,14 +92,9 @@
         .pf{
             font-weight: 400;
             text-align: justify;
+            line-height: 24px;
            
-            & .one {
-                width: 75%;
-            }
-            & .two {
-                width: 75%;
-                margin-top: 1em;
-            }
+            
         }
 
     }
