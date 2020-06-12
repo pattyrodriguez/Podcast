@@ -249,6 +249,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .header ul {
+    background-color: #FFFFFF;
+    padding-right: 6vw;
+  }
   header a:before {
     content: '';
     position: absolute;
